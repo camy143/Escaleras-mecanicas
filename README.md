@@ -2,7 +2,25 @@ Repo-escalera-mecánica
 
 Integrantes:Olivares Garcia Maria del Carmen, Alvarez Ochoa Rodrigo Emiliano,
 Ortiz Garcia Diego, Alvarez Saavedra Alexis Ivan
+DIAGRAMA DE FLUJO: FUNCIONAMIENTO DE ESCALERAS MECÁNICAS
 
+Inicio
+ Verificación de seguridad del sistema
+ Encendido del motor
+ Activación de sensores de presencia
+¿Hay personas en la escalera?
+   (Sí) → Inicia el movimiento de la banda
+    → Ciclo de transporte (subida o bajada)
+    → Monitoreo constante de operación (velocidad, carga, obstáculos)
+    → ¿Se detecta algún error?
+      → (Sí) → Detención de emergencia
+        → Notificación al sistema de control
+      → (No) → Continua el ciclo
+    → ¿Ya no hay personas en la escalera?
+      → (Sí) → Detención automática tras unos segundos
+      → (No) → Continua operando
+→ (No) → Espera en reposo con sensores activos
+Fin
 
 SISTEMA MECÁNICO
 
